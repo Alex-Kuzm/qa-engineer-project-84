@@ -1,95 +1,96 @@
 ---
 test-cases:
   - summary: |
-    возможность искать товары по ключевому слову
-  status: pass
+      возможность искать товары по ключевому слову
+    status: pass
   
 bugreports: []
 
 ---
 test-cases:
   - summary: |
-    возможность искать товары по категории
-  status: pass
+      возможность искать товары по категории
+    status: pass
 
 bugreports: []
 
 ---
 test-cases:
   - summary: |
-    возможность фильтровать товары по бренду
-  status: pass
+      возможность фильтровать товары по бренду
+    status: pass
 
 bugreports: []
 
 ---
 test-cases:
   - summary: |
-    возможность фильтровать товары по наличию
-  status: pass
+      возможность фильтровать товары по наличию
+    status: pass
   
 bugreports: []
 
 ---
 test-cases:
   - summary: |
-    возможность фильтровать товары по диапазону цены
-  status: pass  
+      возможность фильтровать товары по диапазону цены
+    status: pass  
 
 bugreports: []
 
 ---
 test-cases:
   - summary: |
-    возможность просматривать товары
-  status: pass
+      возможность просматривать товары
+    status: pass
 
 bugreports: []
 
 ---
 test-cases:
   - summary: |
-    возможность просматривать подробную информацию о товаре
-  status: pass
-
-bugreports: []
-  
----
-test-cases:
-  - summary: |
-    возможность добавлять товары в корзину
-  status: pass
-
-bugreports: []
-
----
-test-cases:
-  - summary: |
-    возможность просматривать содержимое корзины
-  status: pass
+      возможность просматривать подробную информацию о товаре
+    status: pass
 
 bugreports: []
   
 ---
 test-cases:
   - summary: |
-    возможность переключить язык интерфейса
-  status: pass
-  
-bugreports: []  
+      возможность добавлять товары в корзину
+    status: pass
+
+bugreports: []
 
 ---
-- summary: |
-    наличие/отустивие картинки "флага" возле переключения на другие языки
-  status: pass
+test-cases:
+  - summary: |
+      возможность просматривать содержимое корзины
+    status: pass
 
+bugreports: []
+  
+---
+test-cases:
+  - summary: |
+      возможность переключить язык интерфейса
+    status: pass
+  
 bugreports: []  
 
 ---
 test-cases:
   - summary: |
-    наличие локализации (перевода) на русский и английский языки
-  status: fail
+      наличие/отустивие картинки "флага" возле переключения на другие языки
+    status: pass
+
+bugreports: []  
+
+---
+test-cases:
+  - summary: |
+      наличие локализации (перевода) на русский и английский языки
+    status: fail
   
 bugreports:
   - summary: |
@@ -108,8 +109,8 @@ bugreports:
 ---
 test-cases:
   - summary: |
-    проверка сайта как SPA-приложение, которое не перезагружает страницу.
-  status: fail
+      проверка сайта как SPA-приложение, которое не перезагружает страницу.
+    status: fail
   
 bugreports:
   - summary: |
@@ -127,8 +128,8 @@ bugreports:
 ---
 test-cases:
   - summary: |
-    проверка проверка оптимизации скорости работы сайта
-  status: fail
+      проверка проверка оптимизации скорости работы сайта
+    status: fail
 
 bugreports:
   - summary: |
@@ -146,16 +147,16 @@ bugreports:
 ---
 test-cases:
   - summary: |
-    проверка безопасности сайта и защиты данных пользователя
-  status: pass
+      проверка безопасности сайта и защиты данных пользователя
+    status: pass
       
 bugreports: []
 
 ---
 test-cases:
   - summary: |
-    проверка наличия адаптативной верстки
-  status: fail
+      проверка наличия адаптативной верстки
+    status: fail
 
 bugreports:
   - summary: |
@@ -175,49 +176,49 @@ bugreports:
 ---
 test-cases:
   - summary: |
-    проверка наличия мобильной версии
-  status: fail
+      проверка наличия мобильной версии
+    status: fail
   
 bugreports:
   - summary: |
-    отсутствует мобильная версия
-  environment: |
-    Google Chrome   107.0.5304.121 (Официальная сборка) Android 14 HyperOS 1.0.9.0
-  steps-to-reproduce: |
-    заходишь на сайт с мобильного
-  expected-result: |
-    наличие мобильной версии сайта
-  actual-result: |
-    отсутствие мобильной версии
+      отсутствует мобильная версия
+    environment: |
+      Google Chrome   107.0.5304.121 (Официальная сборка) Android 14 HyperOS 1.0.9.0
+    steps-to-reproduce: |
+      заходишь на сайт с мобильного
+    expected-result: |
+      наличие мобильной версии сайта
+    actual-result: |
+      отсутствие мобильной версии
 ---
 test-cases:
   - summary: |
-    проверка на совместимость с последними версиями браузеров
-  status: pass
+      проверка на совместимость с последними версиями браузеров
+    status: pass
   
 bugreports: []
 
 ---
 test-cases:
   - summary: |
-    проверка обработки большого количества трафика
-  status: pass
+      проверка обработки большого количества трафика
+    status: pass
+      
+bugreports: []
+
+---
+test-cases:
+  - summary: |
+      проверка возможности убрать все выбранные фильтры поиска для просмотра всех товаров
+    status: pass
     
 bugreports: []
 
 ---
 test-cases:
   - summary: |
-    проверка возможности убрать все выбранные фильтры поиска для просмотра всех товаров
-  status: pass
-    
-bugreports: []
-
----
-test-cases:
-  - summary: |
-    проверка отбора товара сраху по нескольким критериям
-  status: fail
+      проверка отбора товара сраху по нескольким критериям
+    status: fail
     
 bugreports:
   - summary: |
@@ -240,8 +241,8 @@ bugreports:
 ---
 test-cases:
   - summary: |
-    проверка пагинации
-  status: fail
+      проверка пагинации
+    status: fail
     
 bugreports:
   - summary: |
@@ -260,47 +261,47 @@ bugreports:
 ---
 test-cases:
   - summary: |
-    возможность добавлять товар в корзину и продолжать выбирать товары в каталоге.
-  status: pass
+      возможность добавлять товар в корзину и продолжать выбирать товары в каталоге.
+    status: pass
   
 bugreports: []
 
 ---
 test-cases:
   - summary: |
-    возможность на странице корзины удалить товар из корзины
-  status: pass
+      возможность на странице корзины удалить товар из корзины
+    status: pass
     
 bugreports: []
 
 ---
 test-cases:
   - summary: |
-    возможность продолжить выбирать товары в каталоге после перехода из корзины.
-  status: pass
+      возможность продолжить выбирать товары в каталоге после перехода из корзины.
+    status: pass
   
 bugreports: []
 
 ---
 test-cases:
   - summary: |
-    возможность на странице корзины оформить заказ с переходом на страницу оплаты. 
-  status: pass
+      возможность на странице корзины оформить заказ с переходом на страницу оплаты. 
+    status: pass
     
 bugreports: []
 
 ---
 test-cases:
   - summary: |
-    Валидация форм оплаты
-  status: pass
+      Валидация форм оплаты
+    status: pass
   
 bugreports: []
 
 ---
 test-cases:
   - summary: |
-    Корзина должна хранится в сессии браузера.
-  status: pass
+      Корзина должна хранится в сессии браузера.
+    status: pass
   
 bugreports: []
