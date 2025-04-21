@@ -41,16 +41,16 @@
 ---
  - summary: |
       обновление страницы при нажатии кнопки "магазин" в навбаре находясь в корзине
-    environment: |
+   environment: |
       Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
       ОС Linux 22.04
-    steps-to-reproduce: |
+   steps-to-reproduce: |
       - открыть сайт
       - нажать кнопку "корзина"
       - нажать кнопку "магазин"
-    expected-result: |
+   expected-result: |
       переход из корзины без обновления 
-    actual-result: |
+   actual-result: |
       обновляется сайт
     
 ---
