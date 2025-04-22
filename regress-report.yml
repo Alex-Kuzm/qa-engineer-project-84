@@ -3,14 +3,131 @@ test-cases:
   - summary: |
       проверка поиска товаров по названию товара
     status: pass
-  
-bugreports: []
----
 test-cases:
   - summary: |
       проверка поиска товаров по несуществующему названию товара
+    status: fail  
+test-cases:
+  - summary: |
+      возможность искать товары по категории
+    status: pass
+test-cases:
+  - summary: |
+      возможность убрать выбранную категорию
+    status: pass
+test-cases:
+  - summary: |
+      возможность фильтровать товары по бренду
+    status: pass
+test-cases:
+  - summary: |
+      возможность убрать фильтр по бренду
+    status: pass
+test-cases:
+  - summary: |
+      возможность фильтровать товары по наличию
+    status: pass
+test-cases:
+  - summary: |
+      возможность фильтровать товары по диапазону цены
+    status: pass  
+test-cases:
+  - summary: |
+      возможность фильтровать товары по несуществующему диапазону цены
+    status: pass  
+test-cases:
+  - summary: |
+      проверка отбора товара сразу по нескольким критериям
     status: fail
-  
+test-cases:
+  - summary: |
+      возможность просматривать товары
+    status: pass
+test-cases:
+  - summary: |
+      возможность просматривать подробную информацию о товаре
+    status: pass
+test-cases:
+  - summary: |
+      возможность добавлять товары в корзину
+    status: pass
+test-cases:
+  - summary: |
+      возможность просматривать содержимое корзины
+    status: pass
+test-cases:
+  - summary: |
+      возможность переключить язык интерфейса
+    status: pass
+test-cases:
+  - summary: |
+      наличие/отустивие картинки "флага" возле переключения на другие языки
+    status: pass
+test-cases:
+  - summary: |
+      наличие локализации (перевода) на русский и английский языки
+    status: pass
+test-cases:
+  - summary: |
+      наличие полного перевода на русский язык
+    status: fail
+test-cases:
+  - summary: |
+      проверка сайта как SPA-приложение, которое не перезагружает страницу.
+    status: fail
+test-cases:
+  - summary: |
+      проверка  оптимизации скорости работы сайта
+    status: pass
+test-cases:
+  - summary: |
+      проверка безопасности сайта и защиты данных пользователя
+    status: pass
+test-cases:
+  - summary: |
+      проверка наличия адаптативной верстки
+    status: fail
+test-cases:
+  - summary: |
+      проверка наличия мобильной версии
+    status: fail
+test-cases:
+  - summary: |
+      проверка на совместимость с последними версиями браузеров
+    status: pass
+test-cases:
+  - summary: |
+      проверка обработки большого количества трафика
+    status: pass
+test-cases:
+  - summary: |
+      проверка пагинации
+    status: fail
+test-cases:
+  - summary: |
+      возможность добавлять товар в корзину и продолжать выбирать товары в каталоге.
+    status: pass
+test-cases:
+  - summary: |
+      возможность на странице корзины удалить товар из корзины
+    status: pass
+test-cases:
+  - summary: |
+      возможность продолжить выбирать товары в каталоге после перехода из корзины.
+    status: pass
+test-cases:
+  - summary: |
+      возможность на странице корзины оформить заказ с переходом на страницу оплаты. 
+    status: pass
+test-cases:
+  - summary: |
+      Валидация форм оплаты
+    status: pass
+test-cases:
+  - summary: |
+      Корзина должна хранится в сессии браузера.
+    status: pass
+
 bugreports:
   - summary: |
       при вводе несуществующего названия показывает весь каталог
@@ -23,54 +140,6 @@ bugreports:
       пустой каталог с надписью "ничего не найдено"
     actual-result: |
       показывает весь каталог
----
-test-cases:
-  - summary: |
-      возможность искать товары по категории
-    status: pass
-
-bugreports: []
-
----
-test-cases:
-  - summary: |
-      возможность убрать выбранную категорию
-    status: pass
-
-bugreports: []
----
-test-cases:
-  - summary: |
-      возможность фильтровать товары по бренду
-    status: pass
-
-bugreports: []
----
-test-cases:
-  - summary: |
-      возможность убрать фильтр по бренду
-    status: pass
-
-bugreports: []
----
-test-cases:
-  - summary: |
-      возможность фильтровать товары по наличию
-    status: pass
-  
-bugreports: []
----
-test-cases:
-  - summary: |
-      возможность фильтровать товары по диапазону цены
-    status: pass  
-
-bugreports: []
----
-test-cases:
-  - summary: |
-      возможность фильтровать товары по несуществующему диапазону цены
-    status: pass  
 
 bugreports:
   - summary: |
@@ -84,12 +153,7 @@ bugreports:
       пустой каталог с надписью "ничего не найдено"
     actual-result: |
       показывает весь каталог
----      
-test-cases:
-  - summary: |
-      проверка отбора товара сразу по нескольким критериям
-    status: fail
-    
+
 bugreports:
   - summary: |
       проблема с использованием нескольких фильтров для отбора товара вместе
@@ -106,61 +170,7 @@ bugreports:
       отбор товара подходящего по всем критериям
     actual-result: |
       после выбора второго фильтра показывает весь каталог
----
-test-cases:
-  - summary: |
-      возможность просматривать товары
-    status: pass
 
-bugreports: []
----
-test-cases:
-  - summary: |
-      возможность просматривать подробную информацию о товаре
-    status: pass
-
-bugreports: []
----  
-test-cases:
-  - summary: |
-      возможность добавлять товары в корзину
-    status: pass
-
-bugreports: []
----
-test-cases:
-  - summary: |
-      возможность просматривать содержимое корзины
-    status: pass
-
-bugreports: []
----  
-test-cases:
-  - summary: |
-      возможность переключить язык интерфейса
-    status: pass
-  
-bugreports: []  
----
-test-cases:
-  - summary: |
-      наличие/отустивие картинки "флага" возле переключения на другие языки
-    status: pass
-
-bugreports: []  
----
-test-cases:
-  - summary: |
-      наличие локализации (перевода) на русский и английский языки
-    status: pass
-
-bugreports: []  
----
-test-cases:
-  - summary: |
-      наличие полного перевода на русский язык
-    status: fail
----  
 bugreports:
   - summary: |
       неполная локализация на русский язык
@@ -174,12 +184,7 @@ bugreports:
       полный перевод на русский язык
     actual-result: |
       карточки товара не переведены
----  
-test-cases:
-  - summary: |
-      проверка сайта как SPA-приложение, которое не перезагружает страницу.
-    status: fail
-  
+
 bugreports:
   - summary: |
       обновление страницы при нажатии кнопки "магазин" в навбаре
@@ -192,25 +197,6 @@ bugreports:
       ничего либо переход из другого раздела сайта без обновления 
     actual-result: |
       обновляется сайт
----
-test-cases:
-  - summary: |
-      проверка  оптимизации скорости работы сайта
-    status: pass
-
-bugreports: []
----
-test-cases:
-  - summary: |
-      проверка безопасности сайта и защиты данных пользователя
-    status: pass
-      
-bugreports: []
----
-test-cases:
-  - summary: |
-      проверка наличия адаптативной верстки
-    status: fail
 
 bugreports:
   - summary: |
@@ -226,12 +212,7 @@ bugreports:
       правильное изменение верстки
     actual-result: |
       сначала показывается каталог(карточки товара) и только в конце отбор по фильтрам
----
-test-cases:
-  - summary: |
-      проверка наличия мобильной версии
-    status: fail
-  
+
 bugreports:
   - summary: |
       отсутствует мобильная версия
@@ -243,26 +224,7 @@ bugreports:
       наличие мобильной версии сайта
     actual-result: |
       отсутствие мобильной версии
----      
-test-cases:
-  - summary: |
-      проверка на совместимость с последними версиями браузеров
-    status: pass
-  
-bugreports: []
----
-test-cases:
-  - summary: |
-      проверка обработки большого количества трафика
-    status: pass
-      
-bugreports: []
----
-test-cases:
-  - summary: |
-      проверка пагинации
-    status: fail
-    
+ 
 bugreports:
   - summary: |
       можно перейти только на одну страницу
@@ -276,45 +238,3 @@ bugreports:
       показывает выбор нового товара и возможность перемещения на следующую/предыдущую страницу
     actual-result: |
       показывает следующую страницу и возможность перейти только на предыдущую
----
-test-cases:
-  - summary: |
-      возможность добавлять товар в корзину и продолжать выбирать товары в каталоге.
-    status: pass
-  
-bugreports: []
----
-test-cases:
-  - summary: |
-      возможность на странице корзины удалить товар из корзины
-    status: pass
-    
-bugreports: []
----
-test-cases:
-  - summary: |
-      возможность продолжить выбирать товары в каталоге после перехода из корзины.
-    status: pass
-  
-bugreports: []
----
-test-cases:
-  - summary: |
-      возможность на странице корзины оформить заказ с переходом на страницу оплаты. 
-    status: pass
-    
-bugreports: []
----
-test-cases:
-  - summary: |
-      Валидация форм оплаты
-    status: pass
-  
-bugreports: []
----
-test-cases:
-  - summary: |
-      Корзина должна хранится в сессии браузера.
-    status: pass
-  
-bugreports: []
