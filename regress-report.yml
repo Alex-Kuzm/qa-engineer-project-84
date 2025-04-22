@@ -5,7 +5,7 @@ test-cases:
     status: pass
   
 bugreports: []
-
+---
 test-cases:
   - summary: |
       проверка поиска товаров по несуществующему названию товара
