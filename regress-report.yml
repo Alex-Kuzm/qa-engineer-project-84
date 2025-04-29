@@ -221,7 +221,7 @@ bugreports:
   - summary: |
       отсутствует мобильная версия
     environment: |
-      Google Chrome   107.0.5304.121 (Официальная сборка) Android 14 HyperOS 1.0.9.0
+       Xiaomi 11t Google Chrome 107.0.5304.121 (Официальная сборка) Android 14 HyperOS 1.0.9.0
     steps-to-reproduce: |
       заходишь на сайт с мобильного
     expected-result: |
